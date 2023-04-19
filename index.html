@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Raleway:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+      });
+    </script>
+    <title>Resipinar - Residencial para adultos mayores</title>
+  </head>
+
+  <body>
+    <section id="hero">
+      <div class="hero-container">
+        <header>
+          <div class="header-content">
+            <nav>
+              <ul>
+                <li><a href="#habitaciones">Habitaciones</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <div class="hero-container-elements">
+          <img src="./src/logocasa.png" alt="logo_casa" />
+          <h1>Resipinar</h1>
+          <p>Residencial para adultos mayores</p>
+          <button class="main-button">MÁS INFORMACIÓN</button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="conocenos"
+      data-aos="fade-up"
+      data-aos-options="duration: 1000, delay: 1500"
+    >
+      <h2>Conócenos</h2>
+      <div class="conocenos-container">
+        <div class="conocenos-container-left">
+          <img src="./src/conocenos.jpeg" alt="" />
+        </div>
+        <div class="conocenos-container-right">
+          <p>
+            Brindamos un ambiente familiar y de confianza para acompañar a
+            personas adultas mayores, promoviendo su actividad mental y física
+            para su bienestar, respetando sus derechos y generando entronos
+            amigables.
+          </p>
+          <a href="#contacto"
+            ><button class="main-button">CONSÚLTANOS YA</button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="habitaciones"
+      data-aos="fade-up"
+      data-aos-options="duration: 1000, delay: 1500"
+    >
+      <h2>Habitaciones disponibles</h2>
+      <div class="habitaciones-container">
+        <div
+          class="habitaciones--card"
+          data-aos="fade-up"
+          data-aos-options="duration: 1000, delay: 1500"
+          id="card-1"
+        >
+          <img src="./src/card1.png" alt="habitacion" class="card-image" />
+          <p>HABITACIÓN INDEPENDIENTE</p>
+          <p>Descansar y retirarse en una casa con la mejor comunidad</p>
+          <p id="more-text-1"></p>
+          <img
+            src="./src/arrow.png"
+            alt="flecha"
+            class="card-arrow"
+            onclick="expandirTarjeta('card-1')"
+          />
+        </div>
+
+        <div
+          class="habitaciones--card"
+          data-aos="fade-up"
+          data-aos-options="duration: 1000, delay: 1500"
+          id="card-2"
+        >
+          <img src="./src/card2.png" alt="habitacion" class="card-image" />
+          <p>HABITACIÓN COMPARTIDA</p>
+          <p>Cada ocupante tendrá su propia cama, armario y mesa de noche.</p>
+          <p id="more-text-2"></p>
+          <img
+            src="./src/arrow.png"
+            alt="flecha"
+            class="card-arrow"
+            onclick="expandirTarjeta('card-2')"
+          />
+        </div>
+
+        <div
+          class="habitaciones--card"
+          data-aos="fade-up"
+          data-aos-options="duration: 1000, delay: 1500"
+          id="card-3"
+        >
+          <img src="./src/card3.png" alt="habitacion" class="card-image" />
+          <p>HABITACIÓN INDIVIDUAL</p>
+          <p>Espacio privado y cómodo para descansar</p>
+          <p id="more-text-3"></p>
+          <img
+            src="./src/arrow.png"
+            alt="flecha"
+            class="card-arrow"
+            onclick="expandirTarjeta('card-3')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="clientes"
+      data-aos="fade-up"
+      data-aos-options="duration: 1000, delay: 1500"
+    >
+      <h2>Clientes Satisfechos</h2>
+      <div class="clientes-container">
+        <div class="clientes--card">
+          <img src="./src/cliente1.png" alt="" class="client-image" />
+          <p>Ana Fernandez</p>
+          <p>
+            "Ingresé en el residencial para adultos mayores hace un año y no
+            podría estar más satisfecho con mi decisión."
+          </p>
+          <img src="./src/starss.png" alt="" class="stars-image" />
+        </div>
+
+        <div class="clientes--card">
+          <img src="./src/client2.png" alt="" class="client-image" />
+          <p>Ana Fernandez</p>
+          <p>
+            "Ingresé en el residencial para adultos mayores hace un año y no
+            podría estar más satisfecho con mi decisión."
+          </p>
+          <img src="./src/starss.png" alt="" class="stars-image" />
+        </div>
+
+        <div class="clientes--card">
+          <img src="./src/client3.png" alt="" class="client-image" />
+          <p>Ana Fernandez</p>
+          <p>
+            "Ingresé en el residencial para adultos mayores hace un año y no
+            podría estar más satisfecho con mi decisión."
+          </p>
+          <img src="./src/starss.png" alt="" class="stars-image" />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contacto"
+      data-aos="fade-up"
+      data-aos-options="duration: 1000, delay: 1500"
+    >
+      <div class="contacto-container">
+        <div class="contacto-left">
+          <h2>Contacto</h2>
+
+          <div class="row">
+            <p>LOCALIDAD</p>
+            <p>El Pinar, Canelones</p>
+          </div>
+
+          <div class="row">
+            <p>CORREO ELECTRÓNICO</p>
+            <p>resipinar@gmail.com</p>
+          </div>
+
+          <div class="row">
+            <p>TELÉFONO</p>
+            <p>099 545 232</p>
+          </div>
+        </div>
+        <div class="contacto-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.4299041612144!2d-55.887833799999996!3d-34.7951246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8af426033cd9%3A0x36d305b572cc14a6!2sIndependencia%2C%2015800%20Ciudad%20de%20la%20Costa%2C%20Departamento%20de%20Canelones!5e0!3m2!1ses-419!2suy!4v1680911067206!5m2!1ses-419!2suy"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <form>
+        <h3>Envianos tu consulta</h3>
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required /><span
+            id="nombre-error"
+            class="error"
+          ></span>
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><span
+            id="email-error"
+            class="error"
+          ></span>
+        </div>
+
+        <div>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea
+          ><span id="mensaje-error" class="error"></span>
+        </div>
+
+        <button
+          id="send-button"
+          type="button"
+          onclick="sendForm()"
+          class="main-button"
+        >
+          Enviar
+        </button>
+        <p id="status-message" style="display: none">Enviado exitosamente</p>
+      </form>
+
+      <div class="footer">
+        <p class="footer-terms">Términos y condiciones - Sobre nosotros</p>
+        <div>
+          <p>Buscanos en</p>
+          <img src="./src/ig.png" alt="" />
+          <img src="./src/fb.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <script src="./card.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./handleForm.js"></script>
+    <script>
+      (function () {
+        emailjs.init("hebVUl-_9RVcnioR6");
+      })();
+    </script>
+  </body>
+</html>
